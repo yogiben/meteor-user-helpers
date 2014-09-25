@@ -1,5 +1,7 @@
 <template name="profileThumb">
-	<a class="pull-left" href="#">
-		<img class="media-object" src="#" alt="Image">
-	</a>
+	{{#if profileThumbSrc _id}}
+		<img class="media-object" src="{{profileThumbSrc _id}}" alt="Image">
+	{{else}}
+
+	{{/if}}
 </template>

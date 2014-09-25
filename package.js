@@ -19,8 +19,8 @@ Package.onUse(function(api) {
 
 	 api.addFiles(
 		[
-			'lib/client/helpers.coffee',
 			'lib/client/templates.html',
+			'lib/client/helpers.coffee',
 			'lib/client/templates.less'
 		],
 		'client')

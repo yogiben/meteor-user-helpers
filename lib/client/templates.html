@@ -1,6 +1,8 @@
 <template name="profileThumb">
 	{{#if profileThumbSrc _id}}
-		<img class="media-object" src="{{profileThumbSrc _id}}" alt="Image">
+		<div class="profile-thumb">
+			<img class="media-object img-thumbnail img-circle" src="{{profileThumbSrc _id}}" alt="Image">
+		</div>
 	{{else}}
 
 	{{/if}}

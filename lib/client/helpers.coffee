@@ -10,5 +10,5 @@ Template.profileThumb.helpers
 						picture
 					else
 						if typeof ProfilePictures != 'undefined' && ProfilePictures.findOne user.profile.picture
-						picture = ProfilePictures.findOne user.profile.picture
-						picture.url({store: 'thumbs'});
+							picture = ProfilePictures.findOne picture
+							picture.url({store: 'thumbs'});

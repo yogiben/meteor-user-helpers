@@ -20,6 +20,7 @@ Package.onUse(function(api) {
 	 api.addFiles(
 		[
 			'lib/client/templates.html',
+			'lib/client/templates.coffee',
 			'lib/client/helpers.coffee',
 			'lib/client/templates.less'
 		],

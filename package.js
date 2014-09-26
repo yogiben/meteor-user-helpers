@@ -21,7 +21,8 @@ Package.onUse(function(api) {
 		[
 			'lib/client/templates.html',
 			'lib/client/helpers.coffee',
-			'lib/client/templates.less'
+			'lib/client/templates.less',
+      'lib/client/utils.coffee'
 		],
 		'client')
 

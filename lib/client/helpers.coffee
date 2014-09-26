@@ -9,8 +9,8 @@ getUserInitial = (user)->
 		'<i class="fa fa-user"></i>'
 
 getUserColor = (user)->
-  index = user._id.charCodeAt(0) - 48
-  UserHelpers.colorPalette[index]
+	index = user._id.charCodeAt(0) - 48
+	UserHelpers.colorPalette[index]
 
 Template.profileThumb.helpers
 	profileThumbSrc: (_id) ->

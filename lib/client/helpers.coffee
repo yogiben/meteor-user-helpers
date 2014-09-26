@@ -8,6 +8,10 @@ getUserInitial = (user)->
 	else
 		'<i class="fa fa-user"></i>'
 
+getUserColor = (user)->
+	index = user._id.charCodeAt(0) - 48
+	UserHelpers.colorPalette[index]
+
 Template.profileThumb.helpers
 	profileThumbSrc: (_id) ->
 		if typeof Meteor.users != 'undefined'
@@ -29,5 +33,5 @@ Template.profileThumb.helpers
 			{
 				html: html
 				color: 'white'
-				backgroundColor: 'red'
+				backgroundColor: getUserColor(user)
 			}

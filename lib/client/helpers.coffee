@@ -4,9 +4,9 @@ Template.registerHelper 'niceName', (_id)->
 	else
 		user = Meteor.user()
 
-	if user.username
+	if user and user.username
 		user.username
-	else if user.profile.firstName
+	else if user.profile  and user.profile.firstName
 		user.profile.firstName
 	else if user.emails[0].address
 		user.emails[0].address

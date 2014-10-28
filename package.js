@@ -1,6 +1,6 @@
 Package.describe({
 	summary: "Adds helpers for displaying profile pictures etc.",
-	version: "0.0.2",
+	version: "0.0.7",
 	git: "http://github.com/yogiben/meteor-user-helpers.git"
 });
 
@@ -14,6 +14,7 @@ Package.onUse(function(api) {
 			'coffeescript',
 			'less',
 			'templating',
+			'yogiben:helpers@0.0.1'
 		],
 		both);
 
